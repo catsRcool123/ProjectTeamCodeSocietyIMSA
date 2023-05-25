@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Main Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/tech_stack">Tech Stack</a></li>
+        <li><a href="/demo">Demo</a></li>
+      </ul>
+    </nav>
+    <div class="container">
+      <form method="POST" action="/">
+        <div class="input-box">
+    <form method="POST">
+      <label for="input1">Select Simplification Level:</label>
+      <select id="input1" name="input1">
+        <option value="1">Short</option>
+        <option value="2">Medium</option>
+        <option value="3">Long</option>
+      </select>
+        </div>
+        <div class="input-box">
+          <label for="input2">Paragraph:</label>
+          <textarea name="input2" id="input2"></textarea>
+        </div>
+        <div class="submit-button">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+      <div class="output-box">
+        {% if output %}
+        <p>{{ output }}</p>
+        {% endif %}
+      </div>
+    </div>
+  <br>
+    <div id="words">
+    {% if image_path %}
+    <h3>Word Cloud</h3>
+    <img src="{{ url_for('static', filename=image_path) }}" alt="Word Cloud">
+    {% endif %}
+      <div>
+        <br>
+        <br>
+  </body>
+</html>

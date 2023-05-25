@@ -1,0 +1,6 @@
+To experience a gravity-type force, objects must be on the inside of the outer 
+wall of the tube, so that there can be a centripetal force to move the objects 
+in a circle. See the free-body diagram for an object on the inside of the outer 
+wall and a portion of the tube. The normal force of contact between the 
+object and the wall must be maintaining the circular motion. Write Newton’s 
+second law for the radial direction.

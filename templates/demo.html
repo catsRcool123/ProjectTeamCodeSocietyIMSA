@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Examples</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/tech_stack">Tech Stack</a></li>
+        <li><a href="/demo">Demo</a></li>
+      </ul>
+    </nav>
+    <div class="container">
+      <h1>Demonstration of Project</h1>
+    </div>
+    <div id="example">
+      <div style="display: flex; justify-content: space-between;">
+        <div class="wordcloud">
+          <h1>Word Cloud</h1>
+          <img src="static/imageONE.png" alt="Cloud" height="300">
+        </div>
+        <div class="similarity">
+          <h1>Similarity Matrix</h1>
+          <img src="static/MATRIX.png" alt="Similarity Matrix" height="300">
+        </div>
+      </div>
+      <h1>Example Input</h1>
+      <p>Once T. H. Morgan’s group showed that genes exist as parts of chromosomes (described in Chapter 15), the two chemical components of chromosomes—DNA and protein—emerged as the leading candidates for the genetic material. Until the 1940s, the case for proteins seemed stronger: Biochemists had identified proteins as a class of macromolecules with great heterogeneity and specificity of function, essential requirements for the hereditary material.Moreover, little was known about nucleic acids, whose physical and chemical properties seemed far too uniform to account for the multitude of specific inherited traits exhibited by every organism. This view gradually changed as the role of DNA in heredity was worked out in studies of bacteria and the viruses that infect them, systems far simpler than fruit flies or humans. Let’s trace the search for the genetic material as a case study in scientific inquiry. Evidence That DNA Can Transform Bacteria In 1928, a British medical officer named Frederick Griffith was trying to develop a vaccine against pneumonia. He was studying Streptococcus pneumoniae, a bacterium that causes pneumonia in mammals. Griffith had two strains (varieties) of the bacterium, one pathogenic (disease-causing) and one nonpathogenic (harmless). He was surprised to find that when he killed the pathogenic bacteria with heat and then mixed the cell remains with living bacteria of the nonpathogenic strain, some of the living cells became pathogenic (Figure 16.2). Furthermore, this newly acquired trait of pathogenicity was inherited by all the descendants of the transformed bacteria. Apparently, some chemical component of the dead pathogenic cells caused this heritable change, although the identity of the substance was not known. Griffith called the phenomenon transformation, now defined as a change in genotype and phenotype due to the assimilation of external DNA by a cell. Later work by Oswald Avery, Maclyn McCarty, and Colin MacLeod identified the transforming substance as DNA. Scientists remained skeptical, however, many still viewing proteins as better candidates for the genetic material. Also, many biologists were not convinced that bacterial genes would be similar in composition and function to those of more complex organisms. But the major reason for the continued doubt was that so little was known about DNA.</p>
+    </div>
+    <div style="display: flex; justify-content: space-between;">
+      <div class="section" style="width: 30%;">
+        <h2>Short</h2>
+        <p>Once T. H. Morgan’s group showed that genes exist as parts of chromosomes (described in Chapter 15), the two chemical components of chromosomes—DNA and protein—emerged as the leading candidates for the genetic material. Until the 1940s, the case for proteins seemed stronger: Biochemists had identified proteins as a class of macromolecules with great heterogeneity and specificity of function, essential requirements for the hereditary material.Moreover, little was known about nucleic acids, whose physical and chemical properties seemed far too uniform to account for the multitude of specific inherited traits exhibited by every organism</p>
+      </div>
+      <div class="section" style="width: 30%;">
+        <h2>Medium</h2>
+        <p>Once T. H. Morgan’s group showed that genes exist as parts of chromosomes (described in Chapter 15), the two chemical components of chromosomes—DNA and protein—emerged as the leading candidates for the genetic material. Until the 1940s, the case for proteins seemed stronger: Biochemists had identified proteins as a class of macromolecules with great heterogeneity and specificity of function, essential requirements for the hereditary material.Moreover, little was known about nucleic acids, whose physical and chemical properties seemed far too uniform to account for the multitude of specific inherited traits exhibited by every organism. This view gradually changed as the role of DNA in heredity was worked out in studies of bacteria and the viruses that infect them, systems far simpler than fruit flies or humans. Let’s trace the search for the genetic material as a case study in scientific inquiry. Evidence That DNA Can Transform Bacteria In 1928, a British medical officer named Frederick Griffith was trying to develop a vaccine against pneumonia</p>
+      </div>
+      <div class="section" style="width: 30%;">
+        <h2>Long</h2>
+        <p>Once T. H. Morgan’s group showed that genes exist as parts of chromosomes (described in Chapter 15), the two chemical components of chromosomes—DNA and protein—emerged as the leading candidates for the genetic material. Until the 1940s, the case for proteins seemed stronger: Biochemists had identified proteins as a class of macromolecules with great heterogeneity and specificity of function, essential requirements for the hereditary material.Moreover, little was known about nucleic acids, whose physical and chemical properties seemed far too uniform to account for the multitude of specific inherited traits exhibited by every organism. This view gradually changed as the role of DNA in heredity was worked out in studies of bacteria and the viruses that infect them, systems far simpler than fruit flies or humans. Let’s trace the search for the genetic material as a case study in scientific inquiry. Evidence That DNA Can Transform Bacteria In 1928, a British medical officer named Frederick Griffith was trying to develop a vaccine against pneumonia. He was studying Streptococcus pneumoniae, a bacterium that causes pneumonia in mammals. Griffith had two strains (varieties) of the bacterium, one pathogenic (disease-causing) and one nonpathogenic (harmless). He was surprised to find that when he killed the pathogenic bacteria with heat and then mixed the cell remains with living bacteria of the nonpathogenic strain, some of the living cells became pathogenic (Figure 16.2). Furthermore, this newly acquired trait of pathogenicity was inherited by all the descendants of the transformed bacteria</p>
+      </div>
+    </div>
+  <style>
+      #example {
+        margin: 20px;
+      }
+      /* Add margin between the sections */
+      .section {
+        margin: 0 10px;
+      }
+      .wordcloud {
+        width: 50%;
+      }
+      .similarity {
+        width: 50%;
+      }
+  </style>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<head>
+  <title>Tech stack</title>
+</head>
+<body>
+    <nav id="example">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/tech_stack">Tech Stack</a></li>
+        <li><a href="/demo">Demo</a></li>
+      </ul>
+    </nav>
+  <div class="container">
+    <h2>The Technology Used in Text Summarization</h2>
+    <p class="lead">The following NLP libraries are used:</p>
+    <ul>
+      <li>nltk: a popular NLP library in Python that provides tools for tokenization, part-of-speech tagging, stemming, and more.</li>
+      <li>stopwords: a collection of common words that are often removed from text before analysis.</li>
+      <li>cosine_distance: a distance metric used to calculate the similarity between two vectors.</li>
+    </ul>
+    <p class="lead">The code performs the following steps:</p>
+    <ol>
+      <li>The code uses cosine distance to calculate the similarity between sentences. Cosine distance is a measure of similarity between two vectors in a high-dimensional space. In this case, each sentence is represented as a vector where each dimension corresponds to the frequency of a word in the sentence. The cosine distance between two sentence vectors is calculated by taking the cosine of the angle between them. The smaller the angle between the vectors, the greater their similarity.</li>
+      <li>Read the text from a file and split it into sentences.</li>
+      <li>Remove stop words from each sentence and calculate the similarity between each pair of sentences using cosine distance.</li>
+      <li>Represent each sentence as a vector, where each element of the vector corresponds to a word in the sentence and its value is the frequency of that word in the sentence.</li>
+      <li>Calculate a score for each sentence based on the sum of its similarity to all other sentences.</li>
+      <li>Select the top num_sentences sentences based on their scores, where num_sentences is determined by the value of shortness parameter passed to the summary method.</li>
+      <li>Join the selected sentences together to create a summary.</li>
+    </ol>
+    <p class="lead">Overall, the technology used in this code is a combination of basic text preprocessing techniques, similarity calculation, and ranking algorithms. The goal is to extract the most important information from the input text and present it in a concise and coherent summary.</p>
+  </div>
+  <style>
+nav {
+  background-color: #333;
+}
+#example {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav li {
+  float: left;
+}
+
+nav a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+body {
+  margin: 0;
+}
+.container {
+  margin: 40px 0 0 40px;
+}
+nav a:hover {
+  background-color: #111;
+}
+  </style>
+</body>
